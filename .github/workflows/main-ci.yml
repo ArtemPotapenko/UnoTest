@@ -11,3 +11,6 @@ jobs:
           distribution: 'temurin'
       - name: Testing
         run: mvn test
+      - name: Build and run
+        run: mvn package
+             java -Xmx1G -jar target/UnoTest-1.0-SNAPSHOT.jar inputs/lng-4.txt

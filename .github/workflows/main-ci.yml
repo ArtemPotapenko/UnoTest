@@ -8,5 +8,6 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           java-version: '20'
+          distribution: 'temurin'
       - name: Testing
         run: mvn test

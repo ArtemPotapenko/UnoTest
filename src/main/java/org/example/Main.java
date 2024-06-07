@@ -26,6 +26,7 @@ public class Main {
             groupService.formGroups();
             System.out.printf("Количество групп из более 1 элемента: %d \n", groupService.getGroups().stream().filter(s -> s.size() > 1).toList().size());
             System.out.printf("Время выполнения: %.3f c \n", (new Date().getTime() - date.getTime())/1000d);
+            groupService.printGroups();
         } catch (IOException e) {
             System.out.println("Файл не найден.");
         }
